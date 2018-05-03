@@ -66,13 +66,14 @@ joValasz = 0
 while a <= 8:
     x = int(error_handing("Válassz sort!: "))
     y = int(error_handing("Válassz oszlopot!: "))
-    z = str("\x1b[1;31m{}\x1b[0;37m" . format(error_handing("Mondj egy számot(1-9-ig):")))
+    z = str("\x1b[1;31m{}\x1b[0;37m".format(error_handing("Mondj egy számot(1-9-ig):")))
+    w = ("\x1b[1;31m{}\x1b[0;37m".format(sor[x-1][y-1]))
 
     if jateksor[x-1][y-1] == " ":
         a += 1
         jateksor[x-1][y-1] = z
         screen()
-        if z == sor[x-1][y-1]:
+        if z == w:
             joValasz += 1
 
     else:
